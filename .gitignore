@@ -26,4 +26,4 @@ proguard/
 *.log
 
 # Intellij IDEA
-.idea/
+*.idea/
