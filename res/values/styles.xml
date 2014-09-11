@@ -1,0 +1,56 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="android:Theme.Light">
+        <!-- Customize your theme here. -->
+    </style>
+    <!--按钮-->
+    <style name="defaultButtonStyle">
+        <item name="android:gravity">center</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">@dimen/size_10</item>
+        <item name="android:textColor">@color/red</item>
+        <item name="android:textSize">@dimen/text_size_20</item>
+    </style>
+    <style name="popWindowButtonStyle">
+        <item name="android:gravity">center</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">@dimen/size_10</item>
+        <item name="android:textSize">@dimen/text_size_20</item>
+    </style>
+
+    <style name="bindingButtonStyle">
+        <item name="android:gravity">center</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">@dimen/text_size_20</item>
+    </style>
+    <!--验证码输入框和发送验证码按钮-->
+    <style name="captchaInput">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:inputType">phone</item>
+        <item name="android:maxLength">4</item>
+        <item name="android:ems">4</item>
+        <item name="android:digits">0123456789</item>
+    </style>
+
+    <style name="sendCaptchaButton">
+        <item name="android:layout_width">@dimen/size_100</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:gravity">center_vertical|center_horizontal</item>
+        <item name="android:textSize">@dimen/text_size_13</item>
+        <item name="android:background">@color/black</item>
+    </style>
+    <!--显示密码的图片-->
+    <style name="showPasswordImageView">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:padding">@dimen/size_5</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:layout_centerVertical">true</item>
+    </style>
+</resources>

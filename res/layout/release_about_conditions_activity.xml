@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 发布等约 -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp" >
+
+        <ImageView
+            android:id="@+id/time_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:src="@android:drawable/btn_star" />
+
+        <TextView
+            android:id="@+id/wait_tmtv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/time_image"
+            android:layout_alignTop="@id/time_image"
+            android:layout_toRightOf="@id/time_image"
+            android:gravity="center_vertical"
+            android:paddingLeft="20dp"
+            android:text="@string/wati_time" />
+
+        <TextView
+            android:id="@+id/waittimes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/time_image"
+            android:layout_alignTop="@id/time_image"
+            android:layout_toRightOf="@id/wait_tmtv"
+            android:gravity="center_vertical"
+            android:paddingLeft="20dp"
+            android:text="今天 下午 8:00前" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:src="@android:drawable/btn_star" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <ImageView
+            android:id="@+id/conl_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:src="@android:drawable/star_big_off" />
+
+        <TextView
+            android:id="@+id/cost_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/conl_image"
+            android:layout_alignTop="@id/conl_image"
+            android:layout_toRightOf="@id/conl_image"
+            android:gravity="center_vertical"
+            android:paddingLeft="20dp"
+            android:text="@string/wati_time" />
+
+        <TextView
+            android:id="@+id/pay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/conl_image"
+            android:layout_alignTop="@id/conl_image"
+            android:layout_toRightOf="@id/cost_tv"
+            android:gravity="center_vertical"
+            android:paddingLeft="20dp"
+            android:text="你请客" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:src="@android:drawable/btn_star" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <ImageView
+            android:id="@+id/like_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:src="@android:drawable/btn_star" />
+
+        <TextView
+            android:id="@+id/like_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/like_image"
+            android:layout_alignTop="@id/like_image"
+            android:layout_toRightOf="@id/like_image"
+            android:gravity="center_vertical"
+            android:paddingLeft="20dp"
+            android:text="@string/wati_time" />
+
+        <TextView
+            android:id="@+id/un"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/like_image"
+            android:layout_alignTop="@id/like_image"
+            android:layout_toRightOf="@id/like_tv"
+            android:gravity="center_vertical"
+            android:paddingLeft="20dp"
+            android:text="不限" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:src="@android:drawable/btn_star" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/location_la"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <ImageView
+            android:id="@+id/location_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:src="@android:drawable/btn_star" />
+
+        <TextView
+            android:id="@+id/location_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/location_image"
+            android:layout_alignTop="@id/location_image"
+            android:layout_toRightOf="@id/location_image"
+            android:gravity="center_vertical"
+            android:paddingLeft="20dp"
+            android:text="@string/wati_time" />
+
+        <TextView
+            android:id="@+id/cost"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/location_image"
+            android:layout_alignTop="@id/location_image"
+            android:layout_toRightOf="@id/location_tv"
+            android:gravity="center_vertical"
+            android:paddingLeft="20dp"
+            android:text="不限" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:src="@android:drawable/btn_star" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/location_la" >
+
+        <ImageView
+            android:id="@+id/statement_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:src="@android:drawable/btn_star" />
+
+        <TextView
+            android:id="@+id/statement"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/statement_image"
+            android:layout_alignTop="@id/statement_image"
+            android:layout_toRightOf="@id/statement_image"
+            android:gravity="center_vertical"
+            android:paddingLeft="20dp"
+            android:text="@string/statement" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/et_la"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <EditText
+            android:id="@+id/test"
+            android:layout_width="fill_parent"
+            android:layout_height="100dp"
+            android:layout_weight="0.41" >
+        </EditText>
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/save_send"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/et_la"
+        android:layout_marginTop="20dp"
+        android:text="@string/save_send" />
+
+</LinearLayout>

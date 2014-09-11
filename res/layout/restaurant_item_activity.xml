@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <!--  商户的item-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:paddingRight="10dp"
+        android:paddingLeft="10dp">
+
+        <ImageView
+            android:id="@+id/restaurant_im"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@drawable/ic_launcher"
+            android:layout_alignParentBottom="true" />
+
+        <TextView
+            android:id="@+id/tv_mane"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/restaurant_im"
+            android:text="王子铂金饭店 "
+            android:layout_above="@+id/restaurant_im"
+            android:layout_toRightOf="@+id/restaurant_im" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2.1KM"
+            android:id="@+id/distance"
+            android:layout_above="@+id/location_tv"
+            android:layout_alignRight="@+id/go_there"
+            android:layout_alignEnd="@+id/go_there"
+            android:layout_alignLeft="@+id/go_there"
+            android:layout_alignStart="@+id/go_there" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="雁塔区 曲江新区"
+            android:textColor="@color/lightblue"
+            android:layout_marginTop="20dp"
+            android:layout_below="@+id/tv_mane"
+            android:layout_alignLeft="@+id/tv_mane"
+            android:layout_alignStart="@+id/tv_mane"
+            android:id="@+id/location_tv" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/per_capita"
+            android:layout_below="@+id/location_tv"
+            android:layout_marginTop="20dp"
+            android:layout_toRightOf="@+id/restaurant_im"
+            android:layout_toEndOf="@+id/restaurant_im"
+            android:id="@+id/per_capita" />
+        <Button
+            android:id="@+id/go_there"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="去这家"
+            android:background="@color/lightblue"
+            android:layout_alignTop="@+id/money"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+        <TextView
+            android:id="@+id/money"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="￥300"
+            android:textColor="@color/red"
+            android:layout_toEndOf="@+id/per_capita"
+            android:layout_marginLeft="27dp"
+            android:layout_alignTop="@+id/per_capita"
+            android:layout_toRightOf="@+id/per_capita" />
+
+        <TextView
+            android:id="@+id/re_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/lightblue"
+            android:text="粤菜馆"
+            android:layout_marginBottom="5dp"
+            android:layout_alignLeft="@+id/go_there"
+            android:layout_alignStart="@+id/go_there"
+            android:layout_alignBottom="@+id/location_tv" />
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?><!-- 等约下面 ID图 -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp">
+
+        <ImageView
+            android:id="@+id/time_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:src="@android:drawable/btn_star" />
+
+        <ImageView
+            android:id="@+id/wait_tmtv1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/time_image"
+            android:layout_alignTop="@id/time_image"
+            android:layout_toRightOf="@id/time_image"
+            android:gravity="center_vertical"
+            android:src="@android:drawable/star_on" />
+
+        <ImageView
+            android:id="@+id/wait_tmtv2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/wait_tmtv1"
+            android:layout_alignTop="@id/wait_tmtv1"
+            android:layout_toRightOf="@id/wait_tmtv1"
+            android:gravity="center_vertical"
+            android:src="@android:drawable/star_on" />
+
+        <ImageView
+            android:id="@+id/wait_tmtv3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/wait_tmtv2"
+            android:layout_alignTop="@id/wait_tmtv2"
+            android:layout_toRightOf="@id/wait_tmtv2"
+            android:gravity="center_vertical"
+            android:src="@android:drawable/star_on" />
+
+        <ImageView
+            android:id="@+id/wait_tmtv4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/wait_tmtv3"
+            android:layout_alignTop="@id/wait_tmtv3"
+            android:layout_toRightOf="@id/wait_tmtv3"
+            android:gravity="center_vertical"
+            android:src="@android:drawable/star_on" />
+
+        <ImageView
+            android:id="@+id/wait_tmtv5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/wait_tmtv4"
+            android:layout_alignTop="@id/wait_tmtv4"
+            android:layout_toRightOf="@id/wait_tmtv4"
+            android:gravity="center_vertical"
+            android:src="@android:drawable/star_on" />
+
+        <ImageView
+            android:id="@+id/imageline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/tv_time"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/u85_line"
+            android:gravity="center_vertical" />
+
+        <TextView
+            android:id="@+id/tv_time"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="10dp"
+            android:text="2小时前" />
+
+        <TextView
+            android:id="@+id/text_km"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_toLeftOf="@+id/imageline"
+            android:text="3Km" />
+    </RelativeLayout>
+
+</LinearLayout>

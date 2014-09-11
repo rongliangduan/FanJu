@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 回复XXXX 页面 -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp" >
+
+        <ImageView
+            android:id="@+id/time_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:src="@android:drawable/btn_star" />
+
+        <TextView
+            android:id="@+id/reply"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:text="@string/reply"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/time_image"
+            android:layout_toEndOf="@+id/time_image"
+            android:layout_marginLeft="95dp" />
+
+        <TextView
+            android:id="@+id/waittimes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/time_image"
+            android:layout_alignTop="@id/time_image"
+            android:layout_toRightOf="@id/reply"
+            android:gravity="center_vertical"
+            android:text="XXXXX" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:src="@android:drawable/btn_star" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/et_la"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp">
+
+        <EditText
+            android:id="@+id/test"
+            android:layout_width="fill_parent"
+            android:layout_height="100dp"
+            android:layout_weight="0.41" >
+        </EditText>
+    </RelativeLayout>
+
+</LinearLayout>
